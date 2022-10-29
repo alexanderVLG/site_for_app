@@ -31,7 +31,7 @@ class Navbar extends Component {
 {/*--this nav shows up after max-width 950px--*/ }      
       <nav className='desktop__nav'>
         <ul>
-          <li><a href="#">Магазины</a></li>
+          <li><a href="#">Stores</a></li>
           <li><a href="#">Помощь и Поддержка</a></li>
           <li><a href="#"><Button/></a></li>
         </ul>
