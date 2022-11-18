@@ -5,6 +5,8 @@
   --dark_blue: #0f2336;
   --aqua: #00cccc;
   --dark_gray: #576d81;
+  --hover_button: #0BE3A6;
+  --input_background: #f0f0f2;
 
   --roboto: 'Roboto', sans-serif;
 }
@@ -22,26 +24,35 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--roboto);
-  background-color: var(--white);
+  background-color: #e5e5e5;
   font-size: 1rem;
+  font-weight: 400;
 
 }
 
-h1, h2, h3 {
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
   margin: 0;
 }
 
 a {
-
   text-decoration: none;
 }
 
-@media (max-width: 950px) {
-  .desktop__nav {
-    display: none;
-  }
-  
-} 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
 
 
 
