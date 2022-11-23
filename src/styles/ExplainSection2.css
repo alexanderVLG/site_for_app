@@ -49,6 +49,8 @@
   .section2__img {
     padding-right: 20px;
     width: calc(50vw - 60px);
+    height: -moz-fit-content;
+    height: -wekit-fit-content;
     height: fit-content;
     
   }

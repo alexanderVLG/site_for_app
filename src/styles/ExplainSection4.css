@@ -53,6 +53,8 @@
 
   .section4__img {
     width: calc(44vw - 55px);
+    height: -moz-fit-content;
+    height: -wekit-fit-content;
     height: fit-content;
   }
 }
