@@ -1,27 +1,33 @@
+.loyalty__card--container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
 .loyalty__card {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
-  padding: 25px 31px 43px 25px;
-  max-width: 455px;
-  height: 179px;
+  padding: 27px 10px;
+  max-width: 300px;
+  height: 159px;
   background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
 }
 
 .loyalty__card h3  {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--dark_blue);
 }
 
 .loyalty__card--container .loyalty__card:nth-child(2) h3 {
-  padding: 2px 0;
+  padding: 8px 0;
 }
 
 .loyalty__card--container .loyalty__card:first-child h3,
 .loyalty__card--container .loyalty__card:last-child h3 {
-  padding: 13px 0;
+  padding: 15px 0;
 }
 
 .explain__section3 img {
@@ -31,7 +37,7 @@
 
 .img__container {
   display: flex;
-  margin-right: 23px;
+  margin-right: 10px;
   width: 50px;
   height: 50px;
   border-radius: 8px;
@@ -39,27 +45,44 @@
 }
 
 .loyalty__card p {
-  padding-left: 73px;
+  padding-left: 60px;
+  font-size: .75rem;
   color: var(--dark_gray);
 }
 
+
 @media (min-width: 479px) {
-  .loyalty__card--container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  .loyalty__card {
+    padding: 25px 31px 43px 25px;
+    max-width: 455px;
+    height: 179px;
   }
 
-  .loyalty__card {
-    display: flex;
+  .loyalty__card h3  {
+    font-size: 1.375rem;
+  }
+
+  .loyalty__card--container .loyalty__card:nth-child(2) h3 {
+    padding: 0;
+  }
+
+  .loyalty__card--container .loyalty__card:first-child h3,
+  .loyalty__card--container .loyalty__card:last-child h3 {
+    padding: 13px 0;
+}
+
+  .img__container {
+    margin-right: 23px;
+  }
+
+  .loyalty__card p {
+    padding-left: 73px;
+    font-size: 1rem;
   }
 }
 
 @media (min-width:1440px) {
-  .test {
-    margin-top: -100px;
 
-  }
   .loyalty__card--container {
     gap: 0;
   }

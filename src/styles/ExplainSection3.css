@@ -2,13 +2,13 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-color: var(--light_gray);
 }
 
 .explain__container3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--light_gray);
 }
 
 @media (min-width: 1024px) {
@@ -25,20 +25,18 @@
 }
 
 @media (min-width: 1440px) {
-  .explain__section3 {
-    margin-bottom: 180px; 
-    height: 527px;
-  }
 
   .explain__container3 {
     align-items: flex-end;
     justify-content: space-between;
-    margin: 0 170px;
+    padding-left: 170px;
+    padding-right: 170px;
+    margin-bottom: 180px; 
+    height: 527px;
 
   }
 
   .section3__img {
-    margin-top: -100px;
   }
 }
 
