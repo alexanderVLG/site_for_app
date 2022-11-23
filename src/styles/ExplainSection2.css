@@ -5,6 +5,7 @@
 
 .section2__img {
   margin-bottom: 16px;
+  max-width: fit-content;
 }
 
 .explain__container2 {
