@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Menu from './Menu.js';
-import '../styles/Navbar.css';
+import Menu from './BurgerMenu.js';
+import '../styles/Header.css';
 import Logo from'../img/Logo.svg';
-//import bgImage2 from '../img/bgImage2.svg';
 import bgImage2 from '../img/bgImage2.png';
 
 class Navbar extends Component {
@@ -46,7 +45,7 @@ class Navbar extends Component {
             <ul>
               <li><a href="#">Магазины</a></li>
               <li><a href="#">Помощь и Поддержка</a></li>
-              <li><a href="#" className='header__button'>Установить</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.honeyponey.bubbletea&hl=ru&gl=US&pli=1" className='header__button' target="_blank" rel="noreferrer">Установить</a></li>
             </ul>
           </nav>
         </div>

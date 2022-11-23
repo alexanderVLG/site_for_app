@@ -8,7 +8,6 @@ class LoyaltyCards extends Component {
   render () {
     return (
       <>
-      <div className="test">
       <div className="loyalty__card--container">
         <div className='loyalty__card'>
           <div className='img__container'>
@@ -31,7 +30,6 @@ class LoyaltyCards extends Component {
           <h3>T.Pass Бесплатные Напитки</h3>
           <p>2 чая за 490&#8381; каждый месяц.<br/> И вы можете перенести их<br/> на следующий месяц</p>
         </div>
-      </div>
       </div>
       </>
     );

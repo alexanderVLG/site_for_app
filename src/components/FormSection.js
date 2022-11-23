@@ -19,12 +19,20 @@ class FormSection extends Component {
                       placeholder="Введите ваш номер"
                       className="form__input"
               />
-              <button type="submit" className="button button__form button__form--wide">Отправить</button>
+              <button type="button" className="button button__form button__form--wide">Отправить</button>
             </div>
           </form>
           <div className="form__link">
-            <figure><a href="#"><img src={appstore} alt="ссылка на app store"/></a></figure>
-            <figure><a href="#"><img src={googleplay} alt="ссылка на google play"/></a></figure>
+            <figure>
+              <a href="https://www.apple.com/ru/app-store/" target="_blank" rel="noreferrer">
+                <img src={appstore} alt="ссылка на app store"/>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://play.google.com/store/games?hl=ru&gl=US" target="_blank" rel="noreferrer">
+                <img src={googleplay} alt="ссылка на google play"/>
+              </a>
+            </figure>
           </div>
         </div>
       </section>

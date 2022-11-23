@@ -9,9 +9,9 @@ class ExplainSection3 extends Component {
       <section className='explain__section3'>
         <div className='explain__container3'>
           <LoyaltyCards/>
-          <div className='test2'>
-            <img src={woman} alt="Девушка"/>
-          </div>
+          <figure className='section3__img'>
+            <img src={woman} alt="Девушка смотрит в телефон и улыбается."/>
+          </figure>
         </div>
       </section>
     );

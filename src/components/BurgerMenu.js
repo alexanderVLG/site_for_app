@@ -1,6 +1,6 @@
 import React, {PureComponent} from "react";
 import Logo from '../img/Logo.svg';
-import '../styles/Menu.css';
+import '../styles/BurgerMenu.css';
 
 class Menu extends PureComponent {
   render () {
@@ -20,12 +20,14 @@ class Menu extends PureComponent {
           </li>
           <li><a href="#">Магазины</a></li>
           <li><a href="#">Помощь и Поддержка</a></li>
-          <li><a href="#" className="header__button">Установить</a></li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=com.honeyponey.bubbletea&hl=ru&gl=US&pli=1" target="_blank" rel="noreferrer" className="header__button">Установить</a>
+          </li>
         </ul>
             
-        <div onClick={this.props.handleOnClick}
-              
-              id="close__menu">
+        <div onClick={this.props.handleOnClick}       
+              id="close__menu"
+        >
           <span></span>
         </div>
       </div>

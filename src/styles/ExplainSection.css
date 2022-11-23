@@ -6,12 +6,18 @@
 }
 
 .explain__container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+  margin: 0 10px;
   padding-bottom: 60px;
 }
 
 .explain__item {
-  margin: 0 10px 50px;
-  max-width: 300px;
+  margin: 0;
+  margin-bottom: 50px;
+  width: 300px;
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 .explain__item:nth-child(2) {
@@ -39,44 +45,60 @@
   color: var(--dark_gray);
 }
 
-@media (min-width: 479px) {
-  .explain__container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@media (min-width: 630px) {
+  .explain__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
+  .explain__item {
+    justify-self: auto;
+  }
+
+  .explain__item:first-child {
+    grid-column: 1 / 2;
   }
 
   .explain__item:nth-child(2) {
-    margin-top: 0;  
+    grid-column: 2 / 3;
+    margin-top: 0;
   }
 }
 
-@media (min-width: 767px) {
-  .explain__container {
-    flex-direction: row;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+@media (min-width: 768px) {
+
   .explain__item {
-    margin-right: 0;
-    margin-left: 0;
+    width: auto;
   }
 
-  
+  .explain__container {
+    margin: 0 50px;
+    grid-template-columns: repeat(3, minmax(201px, 300px));
+    column-gap: 15px;
+  }
+
+  .explain__item:first-child {
+    grid-column: 1 / 2;
+  }
+
+  .explain__item:nth-child(2) {
+    grid-column: 2 / 3;
+  }
+
+  .explain__item:last-child {
+    grid-column: 3 / 4;
+  }
 }
 
 @media (min-width: 1024px) {
   .explain__container {
-    margin-left: 170px;
-    margin-right: 170px;    
-  }
-
-  .explain__item:nth-child(2) {
-    margin-top: 0;
-  }
-
-  .explain__item h3 {
-    font-size: 1.5625rem;
+    margin: 0 170px;
   }
 }
 
+@media (min-width: 1270px) {
+  .explain__container {
+    margin-bottom: 50px;
+    column-gap: clamp(15px, 7vw, 100px);
+  }
+}

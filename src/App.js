@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import ExplainSection from './components/ExplainSection';
 import ExplainSection2 from './components/ExplainSection2';
 import ExplainSection3 from './components/ExplainSection3';
@@ -10,7 +10,7 @@ class App extends Component {
   render () {
     return (
       <>
-        <Navbar/>
+        <Header/>
         <main>
           <ExplainSection/>
           <ExplainSection2/>
