@@ -15,12 +15,6 @@
   border-radius: 50px;
 }
 
-.section4__img {
-  height: -moz-fit-content;
-  height: -wekit-fit-content;
-  height: fit-content;
-}
-
 .explain__container4 h3:first-child {
   margin-bottom: 16px;
   color: var(--dark_gray);
